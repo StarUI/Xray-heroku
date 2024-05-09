@@ -1,14 +1,14 @@
 #!/bin/bash
 
-[[ -z "${MY_TOKEN}" ]] && MY_TOKEN="2023"
+[[ -z "${MY_TOKEN}" ]] && MY_TOKEN="22345"
 
 
 [[ -z "${REPO}" ]] && REPO="v2fly/v2ray-core"
 [[ -z "${VER}" ]] && VER="latest"
 [[ -z "${Vless_Path}" ]] && Vless_Path=/l`echo $MY_TOKEN | md5sum | cut -c 1-9`
-[[ -z "${Vless_UUID}" ]] && Vless_UUID="5c301bb8-6c77-41a0-a606-4ba11bbab084"
+[[ -z "${Vless_UUID}" ]] && Vless_UUID="5c301bb8-6c77-41a0-a606-4ba11bbab097"
 [[ -z "${Vmess_Path}" ]] && Vmess_Path=/m`echo $MY_TOKEN | md5sum | cut -c 1-9`
-[[ -z "${Vmess_UUID}" ]] && Vmess_UUID="5c301bb8-6c77-41a0-a606-4ba11bbab084"
+[[ -z "${Vmess_UUID}" ]] && Vmess_UUID="5c301bb8-6c77-41a0-a606-4ba11bbab097"
 [[ -z "${Share_Path}" ]] && Share_Path=/share_${MY_TOKEN}
 [[ -z "${PORT}" ]] && PORT=80
 
